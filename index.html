@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animal Shelter</title>
+  <link rel="stylesheet" href="bower_components/bootswatch/simplex/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body ng-app='animalShelter' ng-cloak>
+  <div ng-include="'src/views/nav/nav.html'"></div>
+
+  <div ui-view></div>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="src/module.js"></script>
+
+  <script src="src/models/animalService.js"></script>
+  <script src="src/models/clientService.js"></script>
+
+  <script src="src/controllers/nav.js"></script>
+  <script src="src/controllers/home.js"></script>
+  <script src="src/controllers/animals/animals.js"></script>
+  <script src="src/controllers/clients/clients.js"></script>
+  <script src="src/controllers/clients/show.js"></script>
+</body>
+</html>
